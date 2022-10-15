@@ -1,9 +1,9 @@
-Attribute VB_Name = "AnaVaz"
+Attribute VB_Name = ""
 Sub run()
 
-nome_BD = "Ana Vaz"
+nome_BD = "Teste"
 linha_gm_semana = 4
-nome_folha = "ANA VAZ"
+nome_folha = "sheet_name"
 
 Dim BaseDados As Worksheet, i As Integer, folha_gm As Worksheet, dict_mes, GM_Semana As Worksheet
 
@@ -14,7 +14,7 @@ Set dict_mes = CreateObject("Scripting.Dictionary")
 
 dict_mes.Add 1, "JANEIRO"
 dict_mes.Add 2, "FEVEREIRO"
-dict_mes.Add 3, "MARÇO"
+dict_mes.Add 3, "MARÃ‡O"
 dict_mes.Add 4, "ABRIL"
 dict_mes.Add 5, "MAIO"
 dict_mes.Add 6, "JUNHO"
@@ -67,9 +67,9 @@ If BaseDados.Cells(i, 1).Value = nome_BD Then
         
         folha_gm.Activate
         folha_gm.Cells(k, 1).Value = BaseDados.Cells(i, 6).Value   'Cliente
-        folha_gm.Cells(k, 2).Value = BaseDados.Cells(i, 7).Value   'Classificação Cliente
+        folha_gm.Cells(k, 2).Value = BaseDados.Cells(i, 7).Value   'ClassificaÃ§Ã£o Cliente
         folha_gm.Cells(k, 3).Value = BaseDados.Cells(i, 8).Value   'Tipo de Visita
-        folha_gm.Cells(k, 4).Value = BaseDados.Cells(i, 10).Value  'Coleção
+        folha_gm.Cells(k, 4).Value = BaseDados.Cells(i, 10).Value  'ColeÃ§Ã£o
         
         duracao_visita = BaseDados.Cells(i, 4).Value
         dia_visita = Day(BaseDados.Cells(i, 3).Value)
@@ -131,9 +131,9 @@ If BaseDados.Cells(i, 1).Value = nome_BD Then
         k = k + 1
         
         folha_gm.Cells(k, 1).Value = BaseDados.Cells(i, 6).Value   'Cliente
-        folha_gm.Cells(k, 2).Value = BaseDados.Cells(i, 7).Value   'Classificação Cliente
+        folha_gm.Cells(k, 2).Value = BaseDados.Cells(i, 7).Value   'ClassificaÃ§Ã£o Cliente
         folha_gm.Cells(k, 3).Value = BaseDados.Cells(i, 8).Value   'Tipo de Visita
-        folha_gm.Cells(k, 4).Value = BaseDados.Cells(i, 10).Value  'Coleção
+        folha_gm.Cells(k, 4).Value = BaseDados.Cells(i, 10).Value  'ColeÃ§Ã£o
         
         duracao_visita = BaseDados.Cells(i, 4).Value
         dia_visita = Day(BaseDados.Cells(i, 3).Value)
