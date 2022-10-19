@@ -1,12 +1,3 @@
-VERSION 1.0 CLASS
-BEGIN
-  MultiUse = -1  'True
-END
-Attribute VB_Name = "EsteLivro"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = True
 Private Sub Workbook_Open()
 
     Dim GM_Semana As Worksheet, BD As Worksheet
@@ -50,11 +41,11 @@ Private Sub Workbook_Open()
         End With
            
     '---Runs the dedicated module for each person---
-    AnaVaz.run
-    AntonioSoares.run
-    HugoCastro.run
-    JoseCarlosO.run
-    RitaFortes.run
-    TinaGuima.run
-    SoniaLuso.run
+    Person1.run
+    Person2.run
+    Person3.run
+    Person4.run
+    Person5.run
+    Person6.run
+    Person7.run
 End Sub
